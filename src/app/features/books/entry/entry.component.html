@@ -1,0 +1,17 @@
+<div class="container">
+
+  Title:<input name="title"
+         #title />Author:<input name="author"
+         #author />Format:
+  <select name="format" #format>
+    <option value=""></option>
+    <option value="Hardcover">Hardcover</option>
+    <option value="Paperback">Paperback</option>
+    <option value="E-Book">E-Book</option>
+  </select>
+  <input type="button"
+         (click)="add(title, author, format)"
+         class="btn btn-sm btn-primary"
+         value="Submit">
+
+</div>

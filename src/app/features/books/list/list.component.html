@@ -1,0 +1,11 @@
+<div class="alert alert-info"
+     *ngIf="books.length === 0">
+  You have no items on your list. Add Them!
+</div>
+
+<ul class="list-unstyled">
+  <li class="alert alert-success"
+      *ngFor="let jim of books">
+    {{ jim.title }}
+  </li>
+</ul>
